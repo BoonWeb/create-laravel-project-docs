@@ -4,22 +4,27 @@ export default defineUserConfig({
   base: '/create-laravel-project/',
   lang: 'en-US',
   title: 'Create Laravel Project',
-  description: 'Start a fresh laravel project in a few minutes with this laravel install wizard.',
+  description: 'Start a fresh laravel project in a few minutes with this setup wizard.',
 
-  // theme: 'antdocs',
   theme: defaultTheme({
-    repo: 'boonweb/create-laravel-project',
-    docsBranch: 'main',
-
     logoDark: 'https://boonweb.de/img/boonweb-logo-white.webp',
     logo: 'https://boonweb.de/img/boonweb-logo.webp',
+
+    lastUpdated: true,
+    contributors: false,
+
+    themePlugins: {
+      backToTop: true,
+    },
+
+    colorMode: 'light',
 
     sidebar: 'auto',
     editLink: true,
     editLinkText: 'Edit this page on Github',
 
-    lastUpdated: true,
-    contributors: true,
+    repo: 'boonweb/create-laravel-project',
+    docsBranch: 'main',
 
     navbar: [
       {
@@ -27,7 +32,7 @@ export default defineUserConfig({
         link: '/',
       },
       {
-        text: 'Guide',
+        text: 'Getting Started',
         link: '/guide/',
       },
       {
