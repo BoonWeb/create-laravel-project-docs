@@ -1,7 +1,7 @@
 import { defineUserConfig, defaultTheme } from 'vuepress'
 
 export default defineUserConfig({
-  base: '/create-laravel-project/',
+  base: '/create-laravel-project-docs/',
   lang: 'en-US',
   title: 'Create Laravel Project',
   description: 'Start a fresh laravel project in a few minutes with this setup wizard.',
