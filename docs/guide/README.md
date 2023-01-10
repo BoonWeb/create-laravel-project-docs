@@ -12,7 +12,7 @@ sidebar: false
 Install latest release:
 
 ```bash
-sudo curl -LsS https://mysite.net/create-laravel-project -o /usr/local/bin/create-laravel-project
+sudo curl -LsS https://github.com/boonweb/create-laravel-project/releases/latest/download/create-laravel-project -o /usr/local/bin/create-laravel-project
 sudo chown $GID:$UID /usr/local/bin/create-laravel-project
 sudo chmod a+x /usr/local/bin/create-laravel-project
 ```
