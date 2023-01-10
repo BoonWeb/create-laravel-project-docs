@@ -1,16 +1,11 @@
 ---
 home: true
-#heroImage: https://boonweb.de/img/boonweb-logo.webp
+heroImage: /create-laravel-project-social-card.webp
 #heroImageDark: https://boonweb.de/img/boonweb-logo-white.webp
 actions:
   - text: Getting Started
     link: /guide/
     type: primary
-    size: large
-  - text: Github
-    link: https://github.com/boonweb/create-laravel-project
-    type: primary
-    ghost: true
     size: large
 features:
 - title: Fast Setup

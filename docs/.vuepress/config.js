@@ -1,14 +1,28 @@
 import { defineUserConfig, defaultTheme } from 'vuepress'
+import { searchPlugin } from '@vuepress/plugin-search'
+import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
+import { shikiPlugin } from '@vuepress/plugin-shiki'
 
 export default defineUserConfig({
   base: '/create-laravel-project-docs/',
   lang: 'en-US',
   title: 'Create Laravel Project',
-  description: 'Start a fresh laravel project in a few minutes with this setup wizard.',
+  description: 'Starting a new Laravel project was never easier!',
+
+  plugins: [
+    searchPlugin({
+      isSearchable: (page) => page.path !== '/',
+      maxSuggestions: 5
+    }),
+     backToTopPlugin(),
+     shikiPlugin({
+       theme: 'github-dark'
+     })
+  ],
 
   theme: defaultTheme({
-    logoDark: 'https://boonweb.de/img/boonweb-logo-white.webp',
-    logo: 'https://boonweb.de/img/boonweb-logo.webp',
+    // logoDark: 'https://boonweb.de/img/boonweb-logo-white.webp',
+    // logo: 'https://boonweb.de/img/boonweb-logo.webp',
 
     lastUpdated: true,
     contributors: false,
@@ -20,8 +34,8 @@ export default defineUserConfig({
     colorMode: 'light',
 
     sidebar: 'auto',
-    editLink: true,
-    editLinkText: 'Edit this page on Github',
+    editLink: false,
+    // editLinkText: 'Edit this page on Github',
 
     repo: 'boonweb/create-laravel-project',
     docsBranch: 'main',
