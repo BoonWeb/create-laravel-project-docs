@@ -1,0 +1,1 @@
+import{_ as n,M as o,p as t,q as c,N as s}from"./framework-603319ee.js";const _={};function r(a,l){const e=o("Msg");return t(),c("div",null,[s(e)])}const d=n(_,[["render",r],["__file","index.html.vue"]]);export{d as default};
